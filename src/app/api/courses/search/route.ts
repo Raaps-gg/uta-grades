@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
   });
 
   const searchParams = new URL(request.url).searchParams;
-  const searchInput = searchParams.get("query") || "";  // user input for suggestions
+  const searchInput = searchParams.get("query") || "";  // user input for
   const course = searchParams.get("course") || ""; // course parameter for results
   const sort = searchParams.get("sort") || "course_number"; // sorting parameter (default: course_number)
   const direction = searchParams.get("direction") || "asc"; // sorting direction (default: asc)
